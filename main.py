@@ -3,15 +3,8 @@ import streamlit as st
 from infos import info
 
 st.write("""
-# My first app
-Hello *world!*
+# Santa Hora
 """)
-
-data = {
-    "calories": [420, 380, 390, 370, 350, 320],
-    "duration": [50, 40, 45, 35, 30, 25],
-
-}
 
 # load data into a DataFrame object:
 # df = pd.DataFrame(data)
@@ -40,7 +33,11 @@ for i in info[lista_paroquias.index(option)]["sex"]:
 for i in info[lista_paroquias.index(option)]["sab"]:
     tab7.write(i)
 
-st.text("_____________________________________________________________________________")
+st.text("""
+⛪
+⛪
+⛪
+""")
 st.text("Selecione um dia")
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"])
 
