@@ -6,7 +6,12 @@ from selecao_dia import selecao_dia
 
 
 with st.sidebar:
-    st.write("sidebar yeah!")
+    st.write("""
+    # Santa Hora
+    """)
+
+    lista_paroquias = [info[i]["nome"] for i in info]
+    option = st.selectbox('Selecione uma Paróquia', lista_paroquias)
 
 
 
@@ -16,19 +21,12 @@ with st.sidebar:
 
 
 
-
-
-st.write("""
-# Holy Hour
-""")
 
 # load data into a DataFrame object:
 # df = pd.DataFrame(data)
 
 
-lista_paroquias = [info[i]["nome"] for i in info]
 
-option = st.selectbox('Selecione uma Paróquia', lista_paroquias)
 
 print(info[lista_paroquias.index(option)]["seg"])
 print(len(info[lista_paroquias.index(option)]["seg"]))
@@ -54,7 +52,7 @@ st.text("""
 ⛪
 ⛪
 """)
-selecao_dia()
+#selecao_dia()
 
 
 # print(lista_horarios_dom)
