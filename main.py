@@ -19,7 +19,7 @@ with st.sidebar:
 
 
 st.write("""
-# Santa Hora
+# Holy Hour
 """)
 
 # load data into a DataFrame object:
