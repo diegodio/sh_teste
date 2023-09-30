@@ -3,6 +3,21 @@ import streamlit as st
 from infos import info
 from selecao_dia import selecao_dia
 
+
+
+with st.sidebar:
+    st.write("sidebar yeah!")
+
+
+
+
+
+
+
+
+
+
+
 st.write("""
 # Santa Hora
 """)
