@@ -54,7 +54,7 @@ st.text("""
 ⛪
 ⛪
 """)
- selecao_dia()
+selecao_dia()
 
 
 # print(lista_horarios_dom)
